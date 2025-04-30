@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const fetchUserProfile = async () => {
+export const getProfile = async () => {
   const token = localStorage.getItem('token');
   const response = await axios.get(`${import.meta.env.VITE_API_URL}/users/profile`, {
     headers: { Authorization: `Bearer ${token}` },
@@ -8,7 +8,7 @@ export const fetchUserProfile = async () => {
   return response.data;
 };
 
-export const updateUserProfile = async (data) => {
+export const updateProfile = async (data) => {
   const token = localStorage.getItem('token');
   const response = await axios.put(`${import.meta.env.VITE_API_URL}/users/profile`, data, {
     headers: { Authorization: `Bearer ${token}` },
