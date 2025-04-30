@@ -1,0 +1,23 @@
+{
+  "name": "soma",
+  "version": "1.0.0",
+  "description": "A comprehensive Learning Management System",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "test": "concurrently \"cd backend && npm run test\" \"cd frontend && npm run test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjingofarouk/soma.git"
+  },
+  "author": "jjingofarouk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjingofarouk/soma/issues"
+  },
+  "homepage": "https://github.com/jjingofarouk/soma#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
