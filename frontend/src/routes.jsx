@@ -7,6 +7,9 @@ import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import QuizPage from './pages/QuizPage';
 import Analytics from './pages/Analytics';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
 
 export const routes = [
@@ -19,5 +22,8 @@ export const routes = [
   { path: '/profile', element: <Profile /> },
   { path: '/quizzes/:id', element: <QuizPage /> },
   { path: '/analytics', element: <Analytics /> },
+  { path: '/about', element: <About /> },
+  { path: '/contact', element: <Contact /> },
+  { path: '/privacy', element: <Privacy /> },
   { path: '*', element: <NotFound /> },
 ];
