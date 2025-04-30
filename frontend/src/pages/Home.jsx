@@ -28,8 +28,9 @@ const Home = () => {
         </div>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-2">Track Progress</h2>
-          <p className// SPDX-License-Identifier: MIT
-          Monitor your learning progress with detailed analytics.
+          <p className="text-gray-600">
+            Monitor your learning progress with detailed analytics.
+          </p>
         </div>
       </section>
     </div>
