@@ -1,11 +1,16 @@
 import { useContext } from 'react';
-import AuthContext from '../context/AuthContext';
+import { Navigate } from 'react-router-dom';
+import AuthContext from '../contexts/AuthContext';
 import StudentDashboard from '../components/dashboard/StudentDashboard';
 import InstructorDashboard from '../components/dashboard/InstructorDashboard';
 import AdminDashboard from '../components/dashboard/AdminDashboard';
 
 const Dashboard = () => {
   const { user } = useContext(AuthContext);
+
+  if (!user) {
+    return <Navigate to="/login" />;
+  }
 
   return (
     <div className="min-h-screen bg-gray-100">
