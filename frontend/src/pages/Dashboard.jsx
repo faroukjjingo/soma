@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
-import AuthContext from '../contexts/AuthContext';
+import AuthContext from '../context/AuthContext';
 import StudentDashboard from '../components/dashboard/StudentDashboard';
 import InstructorDashboard from '../components/dashboard/InstructorDashboard';
 import AdminDashboard from '../components/dashboard/AdminDashboard';
